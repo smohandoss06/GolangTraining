@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+type foo int
+
 type person struct {
 	first string
 	last  string
@@ -36,5 +38,11 @@ func main() {
 		LicenseToKill: true,
 	}
 	fmt.Println(p3.First, p3.person.first)
+	var myAge foo
+	myAge = 44
+	fmt.Printf("%T %v \n", myAge, myAge)
+	var yourAge int
+	yourAge = 29
+	fmt.Printf("%T %v \n", yourAge, yourAge)
 
 }
